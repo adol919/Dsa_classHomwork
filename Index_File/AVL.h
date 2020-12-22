@@ -102,12 +102,12 @@ class AVLTree
 private:
 	Node* root;
 public:
-	AVLTree()
+	AVLTree(Node* t = NULL)//缺省值确实很有效果啊
 	{
-		root = NULL;
+		root = t;
 	}
 
-	static void print(Node* t)//打印信息,这个是用于在层次遍历中输出信息
+	static void print(Node* t)
 	{
 		if (t)
 		{
